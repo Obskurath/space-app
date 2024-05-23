@@ -2,7 +2,7 @@ import styled from "styled-components";
 import SearchField from "../SearchField";
 
 const StyledHeader = styled.header`
-  padding: 60px 40px;
+  padding: 60px 30px;
   display: flex;
   justify-content: space-between;
   img {
