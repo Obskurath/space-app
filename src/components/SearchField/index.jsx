@@ -21,14 +21,20 @@ const StyledSearchField = styled.input`
   line-height: 20px;
   outline: none;
   font-family: "Amiko", sans-serif;
+  &::placeholder {
+    color: #d9d9d9;
+  }
+  position: relative;
 `;
 
 const SearchIcon = styled.img`
-  position: absolute;
-  top: 10px;
-  right: -75px;
-  width: 38px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8%;
+  width: 38px !important;
   height: 38px;
+  z-index: 1;
 `;
 
 const SearchField = () => {
