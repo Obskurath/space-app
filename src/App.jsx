@@ -1,3 +1,4 @@
+import "normalize.css";
 import styled from "styled-components";
 
 const GradientBg = styled.div`
