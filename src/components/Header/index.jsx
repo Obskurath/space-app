@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import SearchField from "../SearchField/SearchField";
+import SearchField from "../SearchField";
 
 const StyledHeader = styled.header`
-  padding: 60px 0;
+  padding: 60px 40px;
   display: flex;
   justify-content: space-between;
   img {
-    width: 200px;
+    width: 212px;
   }
 `;
 
@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <img src="img/logo-blanco.svg" alt="Logo" />
-      <SearchField placeholder="Search for a country..." />
+      <SearchField />
     </StyledHeader>
   );
 };
