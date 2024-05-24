@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import NavItem from "./NavItem";
 
 const StyledList = styled.ul`
   margin: 0;
@@ -15,21 +16,13 @@ const Sidebar = () => {
     <aside>
       <nav>
         <StyledList>
-          <li>
-            <a href="#">Inicio</a>
-          </li>
-          <li>
-            <a href="#">Más vistas</a>
-          </li>
-          <li>
-            <a href="#">Más Me Gusta</a>
-          </li>
-          <li>
-            <a href="#">Nuevas</a>
-          </li>
-          <li>
-            <a href="#">Sorprémdeme</a>
-          </li>
+          <NavItem
+            activeIcon="/icon/home-activo.svg"
+            disabledIcon="/icon/home-inactivo.svg"
+            active
+          >
+            Inicio
+          </NavItem>
         </StyledList>
       </nav>
     </aside>
