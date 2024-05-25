@@ -23,6 +23,12 @@ const Sidebar = () => {
           >
             Inicio
           </NavItem>
+          <NavItem
+            activeIcon="/icon/home-activo.svg"
+            disabledIcon="/icon/mas-vistas-inactivo.svg"
+          >
+            Mas vistas
+          </NavItem>
         </StyledList>
       </nav>
     </aside>
