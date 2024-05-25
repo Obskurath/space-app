@@ -1,26 +1,51 @@
-import styled from "styled-components"
-import ItemNavegacion from "./ItemNavegacion"
+import styled from "styled-components";
+import ItemNavegacion from "./ItemNavegacion";
 const ListaEstilizada = styled.ul`
-   margin: 0;
-   padding: 0;
-   list-style: none;
-`
+  margin: 0;
+  padding: 0;
+  list-style: none;
+`;
 
 const BarraLateral = () => {
-    return (
-        <aside>
-            <nav>
-                <ListaEstilizada>
-                    <ItemNavegacion iconoActivo="iconos/home-activo.png" iconoInactivo = "iconos/home-inactivo.png" activo>
-                     Inicio
-                    </ItemNavegacion>
-                    <ItemNavegacion iconoActivo="iconos/mas-vistas-activo.png" iconoInactivo = "iconos/mas-vistas-inactivo.png">
-                     Más visitados
-                    </ItemNavegacion>
-                </ListaEstilizada>
-            </nav>
+  return (
+    <aside>
+      <nav>
+        <ListaEstilizada>
+          <ItemNavegacion
+            iconoActivo="iconos/home-activo.png"
+            iconoInactivo="iconos/home-inactivo.png"
+            activo
+          >
+            Inicio
+          </ItemNavegacion>
+          <ItemNavegacion
+            iconoActivo="iconos/mas-vistas-activo.png"
+            iconoInactivo="iconos/mas-vistas-inactivo.png"
+          >
+            Más visitados
+          </ItemNavegacion>
+          <ItemNavegacion
+            iconoActivo="iconos/me-gusta-activo.png"
+            iconoInactivo="iconos/me-gusta-inactivo.png"
+          >
+            Más likeados
+          </ItemNavegacion>
+          <ItemNavegacion
+            iconoActivo="iconos/mas-vistas-activo.png"
+            iconoInactivo="iconos/mas-vistas-inactivo.png"
+          >
+            Nuevas
+          </ItemNavegacion>
+          <ItemNavegacion
+            iconoActivo="iconos/mas-vistas-activo.png"
+            iconoInactivo="iconos/mas-vistas-inactivo.png"
+          >
+            Sorpréndeme
+          </ItemNavegacion>
+        </ListaEstilizada>
+      </nav>
+    </aside>
+  );
+};
 
-        </aside>)
-}
-
-export default BarraLateral
+export default BarraLateral;
